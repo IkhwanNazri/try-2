@@ -1,12 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <>
-      <h1>Posting Page</h1>
-      <Link href="/dashboard">Posting Page</Link>
-      <br />
-    </>
-  );
+  redirect("/dashboard");
 }
